@@ -1,1 +1,1 @@
-# javascript-demo
+ 這是我學習javascript的一些範例與一些觀念釐清
