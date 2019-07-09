@@ -20,6 +20,11 @@ console.log(Number("1"));       // 1
 console.log(Number(undefined))  // NaN (Not a Number)
 console.log(Number(null))       // 0
 
+//使用Boolean擬強制轉型
+console.log(Boolean(undefined));    //false
+console.log(Boolean(null));         //false
+console.log(Boolean(""));         //false
+
 //強制轉型後比較
 console.log( "3" == 3)          // true 
 console.log( false == 0)        // true
