@@ -1,4 +1,6 @@
-//bind 函數都有的方法，改變this 的指向
+// bind 函數都有的方法，改變this 的指向
+// fn.bind(傳入this物件)
+// fn.bind(傳入this物件,參數一, 參數二, ....)
 
 var person = {
     firstname: "Jhon",
