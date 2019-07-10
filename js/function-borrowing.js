@@ -14,11 +14,16 @@ var person2 = {
     lastname:   "Lee"
 }
 
+//use bind
 var fullName = person.getFullName.bind(person2);
 console.log(fullName());                // Mary Lee
+
+//use apply
 console.log(
     person.getFullName.apply(person2)
 );                                      // Mary Lee
+
+//use call
 console.log(
     person.getFullName.call(person2)
 );                                      // Mary Lee
