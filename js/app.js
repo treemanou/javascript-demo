@@ -1,13 +1,25 @@
-//use struct 樣放在程式第一行，如果是function效果就只限於該function
-function logNewPerson() {
-    "use strict";
-    
-    var person2;
-    persom2 = {};           // Uncaught ReferenceError: persom2 is not defined
-    console.log(persom2);
-}
+var g = G$('John','Doe');
 
-var person;
-persom = {};
-console.log(persom);
-logNewPerson();
+g   .setLang("cht")
+    .log()          //  cht : John Doe
+    .greet()        //  你好 John
+    .greet(true)    //  您好,John Doe
+    .setLang('en')
+    .log()          //  en : John Doe
+    .greet()        //  Hello John
+    .greet(true)    //  Greetings,John Doe
+    ;
+   
+$("#login").on("click",function(){
+    var lang = $("#lang").val();
+    var loginGrtr = G$('John','Doe');
+    loginGrtr.setLang(lang)
+            .HTMLGreeting("#greeting",true)
+            .log();
+});
+
+
+
+
+     
+     
